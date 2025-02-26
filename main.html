@@ -93,6 +93,7 @@
             <p>Pay Bill</p>
           </div>
           <div
+            id="transaction-main-btn"
             class="card flex flex-col justify-center items-center py-[16px] px-[6px] border-solid border-[2px] border-gray-500 rounded-[6px] mt-3"
           >
             <img
@@ -112,14 +113,14 @@
                 <form class="card-body w-[400px]">
                   <div class="form-control">
                     <legend class="mb-1">Select Bank</legend>
-                    <select
+                    <select id="allbank"
                       class="bg-[#F4F5F7] rounded-full h-[40px] px-5 w-full max-w-xs outline-none"
                     >
                       <option disabled selected>Select back</option>
-                      <option>DBBL</option>
-                      <option>Greedo</option>
-                      <option>BRACK</option>
-                      <option>ISLAMI</option>
+                      <option value="DBBL">DBBL</option>
+                      <option value="Greedo">Greedo</option>
+                      <option value="BRAC">BRAC</option>
+                      <option value="ISLAMI">ISLAMI</option>
                     </select>
                   </div>
                   <div class="form-control">
@@ -175,7 +176,7 @@
         </section>
         <!-- ------------------cashout------------------ -->
         <section id="cashout-section" class="mt-10">
-          <h2 class="text-lg text-black font-bold">Add Money</h2>
+          <h2 class="text-lg text-black font-bold">Cash Out</h2>
           <div class="">
             <div class="hero-content flex-col lg:flex-row-reverse">
               <div class="card bg-base-100 w-fullshrink-0 shadow-2xl">
@@ -230,13 +231,19 @@
             </div>
           </div>
         </section>
+        <!-- -------------transaction history---------------- -->
+        <section id="transaction-section" class="mt-10">
+          <h1 class="text-lg text-black font-bold">Transaction History</h1>
+          <div id="transaction-container"></div>
+        </section>
       </section>
     </section>
     <!-- <script src="script/main.js"></script>
-    <script src="script/toggle.js"></script>
-    <script src="script/cashout.js"></script> -->
+    <script src="script/toggle.js"></script> -->
+    <script src="script/cashout.js"></script>
     <script src="utilitis/utilitis.js"></script>
     <script src="script/addmoney.js"></script>
     <script src="utilitis/toogle.js"></script>
+    <script src="script/transaction.js"></script>
   </body>
 </html>
